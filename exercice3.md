@@ -34,8 +34,27 @@ Cela pourrait bloquer la communication de ces PC avec d'autres.
 -Définir une passerelle par défaut (10.10.255.254).
 -Activer DHCP sur les PC (Obtenir une adresse IP automatiquement).
 -ipconfig /all pour voir l'adresse attribué
-
-
+# question 14 
+Le protocole encapsulé dans le paquet N°2 est ARP 
+Son rôle est de mapper une adresse IP à une adresse MAC, permettant aux appareils sur un réseau local de découvrir les adresses matérielles des uns et des autres.
+# question 15 
+Matériel A (Private_66:68:04) :
+**Rôle :** A initié la requête ARP pour trouver l'adresse MAC associée à l'adresse IP 10.10.4.1.
+Matériel B (Private_66:68:00) :
+**Rôle :** A répondu à la requête ARP avec son adresse MAC et a participé à la communication ICMP Echo (ping) avec 10.10.4.7.
+# question 16
+La communication est initialisée par le périphérique avec l'adresse IP 172.16.5.253. L'adresse MAC de ce périphérique est ca:03:9e:ef:00:38.
+# question 17 
+Le protocole encapsulé est ICMP (Internet Control Message Protocol). Son rôle est d'envoyer des messages d'erreur et des informations opérationnelles indiquant le succès ou l'échec
+# question 18 
+Oui, cette communication a réussi. La requête ICMP Echo (ping) du périphérique avec l'adresse IP 172.16.5.253 (adresse MAC ca:03:9e:ef:00:38) a reçu une réponse ICMP Echo (ping) du périphérique avec l'adresse IP 10.12.2.254 (adresse MAC ca:01:da:d2:00:1c).
+# question 19 
+La ligne du paquet N° 2 montre une réponse ICMP Echo (ping). Elle indique que le périphérique avec l'adresse IP 10.12.2.254 répond à la requête ICMP Echo (ping) envoyée par le périphérique avec l'adresse IP 172.16.5.253
+# question 20 
+Matériel A (IP 172.16.5.253, adresse MAC ca:03:9e:ef:00:38) :
+Rôle : A initié la communication en envoyant une requête ICMP Echo (ping).
+Matériel B (IP 10.12.2.254, adresse MAC ca:01:da:d2:00:1c) :
+Rôle : A répondu à la communication en envoyant une réponse ICMP Echo (ping)
 
 
 
