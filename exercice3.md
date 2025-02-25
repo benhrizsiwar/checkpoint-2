@@ -55,7 +55,20 @@ Matériel A (IP 172.16.5.253, adresse MAC ca:03:9e:ef:00:38) :
 Rôle : A initié la communication en envoyant une requête ICMP Echo (ping).
 Matériel B (IP 10.12.2.254, adresse MAC ca:01:da:d2:00:1c) :
 Rôle : A répondu à la communication en envoyant une réponse ICMP Echo (ping)
-
+# question 21
+Dans cette trame ARP, on observe un message de requête ARP qui demande l'adresse MAC associée à une adresse IP.
+**Matériel source :**
+Nom : "Private_66:68:01"
+Adresse IP : 10.11.80.2
+**Matériel destination :**
+Cette trame est une requête ARP envoyée en broadcast, donc elle ne cible pas un matériel spécifique mais l’ensemble du réseau.
+Adresse IP demandée : 10.11.80.200
+# question 22
+Adresse MAC source : 00:50:79:66:68:01 (correspondant à "Private_66:68:01")
+Adresse MAC destination : ff:ff:ff:ff:ff:ff (adresse de broadcast)
+---> Cette trame est une requête ARP, ce qui signifie que l’hôte 10.11.80.2 cherche à connaître l’adresse MAC associée à 10.11.80.200. Il envoie donc une requête à tous les appareils du réseau (broadcast). Si un appareil possède cette IP, il répondra avec son adresse MAC.
+# question 23
+Cette communication a été enregistrée sur le réseau local (LAN), car le protocole ARP fonctionne uniquement à l’intérieur d’un réseau local. L’analyse de la trame montre une adresse MAC de destination en broadcast, ce qui indique qu’elle a été interceptée à un point où toutes les trames du réseau peuvent être observées (par exemple, sur un switch configuré en mode mirroring ou un hub).
 
 
 
